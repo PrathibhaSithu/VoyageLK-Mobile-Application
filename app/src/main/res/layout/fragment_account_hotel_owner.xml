@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_action_bar_heading"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center"
+                android:textColor="@color/background"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/acc_profile_pic"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/acc_profile_pic"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acc_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:letterSpacing="0.02"
+                            android:textColor="@color/primary"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hotel Owner"
+                            android:textColor="@color/secondary"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/acc_setting_label1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/acc_setting_label"
+                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"
+                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"
+                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"
+                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"
+                        android:padding="@dimen/acc_setting_label_padding">
+
+                        <ImageView
+                            android:layout_width="@dimen/acc_setting_img_width"
+                            android:layout_height="@dimen/acc_setting_img_height"
+                            android:src="@drawable/my_profile"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"
+                            app:tint="@color/acc_setting_label_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_owner_acc_setting1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/acc_setting_label_txt"
+                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"
+                            android:textSize="@dimen/acc_setting_txt_size"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_setting_label2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/acc_setting_label"
+                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"
+                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"
+                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"
+                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"
+                        android:padding="@dimen/acc_setting_label_padding">
+
+                        <ImageView
+                            android:layout_width="@dimen/acc_setting_img_width"
+                            android:layout_height="@dimen/acc_setting_img_height"
+                            android:src="@drawable/my_packages"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"
+                            app:tint="@color/acc_setting_label_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_owner_acc_setting2"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/acc_setting_label_txt"
+                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"
+                            android:textSize="@dimen/acc_setting_txt_size"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/acc_setting_label3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/acc_setting_label"-->
+<!--                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"-->
+<!--                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"-->
+<!--                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"-->
+<!--                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"-->
+<!--                        android:padding="@dimen/acc_setting_label_padding">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/acc_setting_img_width"-->
+<!--                            android:layout_height="@dimen/acc_setting_img_height"-->
+<!--                            android:src="@drawable/inquiry"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"-->
+<!--                            app:tint="@color/acc_setting_label_icon" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="@string/hotel_owner_acc_setting3"-->
+<!--                            android:fontFamily="@font/poppins_medium"-->
+<!--                            android:textColor="@color/acc_setting_label_txt"-->
+<!--                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"-->
+<!--                            android:textSize="@dimen/acc_setting_txt_size"-->
+<!--                            android:layout_gravity="center_vertical"/>-->
+<!--                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/acc_setting_label4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/acc_setting_label"
+                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"
+                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"
+                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"
+                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"
+                        android:padding="@dimen/acc_setting_label_padding">
+
+                        <ImageView
+                            android:layout_width="@dimen/acc_setting_img_width"
+                            android:layout_height="@dimen/acc_setting_img_height"
+                            android:src="@drawable/post"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"
+                            app:tint="@color/acc_setting_label_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_owner_acc_setting4"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/acc_setting_label_txt"
+                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"
+                            android:textSize="@dimen/acc_setting_txt_size"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_setting_label5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/acc_setting_label"
+                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"
+                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"
+                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"
+                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"
+                        android:padding="@dimen/acc_setting_label_padding">
+
+                        <ImageView
+                            android:layout_width="@dimen/acc_setting_img_width"
+                            android:layout_height="@dimen/acc_setting_img_height"
+                            android:src="@drawable/feedback"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"
+                            app:tint="@color/acc_setting_label_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_owner_acc_setting5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/acc_setting_label_txt"
+                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"
+                            android:textSize="@dimen/acc_setting_txt_size"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_setting_label6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/acc_setting_label"
+                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"
+                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"
+                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"
+                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"
+                        android:padding="@dimen/acc_setting_label_padding">
+
+                        <ImageView
+                            android:layout_width="@dimen/acc_setting_img_width"
+                            android:layout_height="@dimen/acc_setting_img_height"
+                            android:src="@drawable/calculator"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"
+                            app:tint="@color/acc_setting_label_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_owner_acc_setting6"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/acc_setting_label_txt"
+                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"
+                            android:textSize="@dimen/acc_setting_txt_size"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_setting_label7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/acc_logout"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"
+                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"
+                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"
+                        android:padding="@dimen/acc_setting_label_padding">
+
+                        <ImageView
+                            android:layout_width="@dimen/acc_setting_img_width"
+                            android:layout_height="@dimen/acc_setting_img_height"
+                            android:src="@drawable/logout"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"
+                            app:tint="@color/background" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_owner_acc_setting7"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/background"
+                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"
+                            android:textSize="@dimen/acc_setting_txt_size"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

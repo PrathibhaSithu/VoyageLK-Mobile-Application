@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreViewPostActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/explorePostTopbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/primary"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/explore_back"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/back"
+                            app:tint="@color/background" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/explore_like"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/like"
+                            app:tint="@color/background" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-12dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:id="@+id/exploreImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/sigiriya" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentBottom="true"
+           android:paddingBottom="40dp">
+               <TextView
+                   android:id="@+id/exploreLocation"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:elevation="10dp"
+                   android:paddingRight="20dp"
+                   android:paddingLeft="20dp"
+                   android:background="@drawable/explore_post_location"
+                   android:text="Sigiriya"
+                   android:fontFamily="@font/poppins_semibold"
+                   android:textColor="@color/secondary"
+                   android:textSize="@dimen/explore_view_post_location_size" />
+       </LinearLayout>
+
+                                </RelativeLayout>
+
+                        </FrameLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-25dp"
+                            android:elevation="5dp"
+                                android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/exploreTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/top_rounded_corners"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="8dp"
+                            android:text="The Eighth Wonder of the World"
+                            android:textColor="@color/primary"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="@dimen/explore_view_post_title_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="15dp"
+                                    app:srcCompat="@drawable/writtenby"
+                                    app:tint="@color/gray" />
+
+
+                                <TextView
+                                    android:id="@+id/exploreAuthor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="By Ramal Pathirana"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:id="@+id/exploreViews"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.2K"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:src="@drawable/view"
+                                    app:tint="@color/gray" />
+
+                        </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/exploreDes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:lineSpacingExtra="3dp"
+                                    android:padding="15dp"
+                                    android:letterSpacing="0.02"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="Rising dramatically from the central plains, the enigmatic rocky outcrop of Sigiriya is perhaps Sri Lanka\'s single most dramatic sight. Near-vertical walls soar to a flat-topped summit that contains the ruins of an ancient civilization, thought to once have been the epicenter of the short-lived kingdom of Kassapa, and there are spellbinding vistas across mist-wrapped forests in the early morning.
+
+                            \n\nSigiriya refuses to reveal its secrets easily, and you'll have to climb a series of vertiginous staircases attached to sheer walls to reach the top. On the way you'll pass a series of quite remarkable frescoes and a pair of colossal lion's paws carved into the bedrock. The surrounding landscape – lily-pad-covered moats, water gardens and cave shrines – only add to Sigiriya's rock-star appeal."
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/explore_view_post_txt_size" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                </ScrollView>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

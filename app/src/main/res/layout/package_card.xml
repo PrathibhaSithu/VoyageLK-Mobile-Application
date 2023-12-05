@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="0dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/package_image"
+        android:paddingStart="8dp"
+        android:adjustViewBounds="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundCorners"
+        android:src="@drawable/drawable_cabana_village_side"
+        tools:ignore="MissingConstraints" />
+
+<!--lodge name-->
+    <TextView
+        android:id="@+id/package_item_lodge_name"
+        android:text="@string/sample_lodge_name"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/sample_content_description"
+        android:textColor="@color/primary_color"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/package_image" />
+
+<!--lodge location icon-->
+    <ImageView
+        android:id="@+id/package_item_lodge_location_icon"
+        android:contentDescription="@string/sample_content_description"
+        android:layout_width="@dimen/package_layout_icon_width"
+        android:layout_height="@dimen/package_layout_icon_height"
+        app:tint="@color/ash"
+        app:layout_constraintStart_toEndOf="@+id/package_image"
+        app:layout_constraintTop_toBottomOf="@id/package_item_lodge_name"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/locationdrawable"
+        />
+
+<!--lodge location-->
+    <TextView
+        android:id="@+id/package_item_lodge_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/sample_lodge_location"
+        android:textColor="@color/ash"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/package_item_lodge_location_icon"
+        app:layout_constraintTop_toBottomOf="@+id/package_item_lodge_name" />
+
+    <!--lodge location icon-->
+
+    <!--lodge price-->
+    <ImageView
+        android:id="@+id/package_item_lodge_price_icon"
+        android:layout_width="@dimen/package_layout_icon_width"
+        android:layout_height="@dimen/package_layout_icon_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/drawable_dollar"
+        app:layout_constraintStart_toEndOf="@id/package_image"
+        app:layout_constraintTop_toBottomOf="@id/package_item_lodge_location_icon"
+        app:tint="@color/ash" />
+
+    <!--see package details button-->
+
+
+    <!--divider line-->
+    <TextView
+        android:id="@+id/package_item_lodge_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/sample_lodge_price"
+        android:textColor="@color/ash"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/package_item_lodge_price_icon"
+        app:layout_constraintTop_toTopOf="@+id/package_item_lodge_price_icon" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="@color/primary_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/package_image"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/see_more_btn_corners"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingStart="20dp"
+        android:paddingTop="3dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:paddingEnd="20dp"
+        android:text="@string/see_details"
+        android:textColor="@color/secondary"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="@id/package_item_lodge_price" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

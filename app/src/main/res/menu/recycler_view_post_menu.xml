@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/editPost"
+        android:icon="@drawable/explore"
+        android:title="@string/post_edit_btn"/>
+    <item
+        android:id="@+id/deletePost"
+        android:icon="@drawable/explore"
+        android:title="@string/post_delete_btn"/>
+</menu>

@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">VoyageLK</string>
+
+    <string name="explore_action_bar_heading">Discover</string>
+    <string name="account_action_bar_heading">Account</string>
+    <string name="my_posts_action_bar_heading">My Posts</string>
+
+    <string name="post_submit_btn">POST</string>
+    <string name="post_title_hint">Title</string>
+    <string name="post_location_hint">Location</string>
+    <string name="post_desc_hint">Write something</string>
+    <string name="post_update_btn">UPDATE</string>
+    <string name="post_edit_btn">Edit</string>
+    <string name="post_delete_btn">Delete</string>
+
+    <string name="traveler_acc_setting1">My Profile</string>
+    <string name="traveler_acc_setting2">My Posts</string>
+    <string name="traveler_acc_setting3">Feedback</string>
+    <string name="traveler_acc_setting4">Trip Expense Calculator</string>
+    <string name="traveler_acc_setting5">Logout</string>
+
+    <string name="hotel_owner_acc_setting1">My Profile</string>
+    <string name="hotel_owner_acc_setting2">My Packages</string>
+    <string name="hotel_owner_acc_setting3">Inquiries</string>
+    <string name="hotel_owner_acc_setting4">My Posts</string>
+    <string name="hotel_owner_acc_setting5">Feedback</string>
+    <string name="hotel_owner_acc_setting6">Trip Expense Calculator</string>
+    <string name="hotel_owner_acc_setting7">Logout</string>
+
+
+    <!--    <string name="app_name">MADMiniProject</string>-->
+    <string name="brand_name">VoyageLK</string>
+    <string name="create_package_prompt">Add your package</string>
+    <string name="package_label_location">Location(City/Town)</string>
+    <string name="package_label_resortName">Resort/Hotel Name</string>
+    <string name="package_label_price">Price Per Day/Night</string>
+    <string name="btn_package_browse_image">Browse Image</string>
+    <string name="btn_package_add">Add Package</string>
+    <string name="package_icon_cont_description">package_logo</string>
+    <string name="sample_recycler_layout_item_text1">sample guest house</string>
+    <string name="sample_content_description">picture</string>
+    <string name="hotel_location">sample location </string>
+    <string name="package_price_dummy">sample price</string>
+    <string name="welcome_page_tagline">Escape to hidden gems in Sri Lanka</string>
+    <string name="welcome_page_explore_btn">Explore</string>
+    <string name="add_package_form">Add one</string>
+    <string name="feedback_content">Enter your feedback</string>
+    <string name="feedback_email">Your email</string>
+    <string name="sample_lodge_name">lodge name</string>
+    <string name="sample_lodge_location">lodge location</string>
+    <string name="sample_lodge_price">lodge_price</string>
+    <string name="trip_expense">Trip Cal</string>
+    <string name="tview_expense_calc">Trip Expense Calculator</string>
+    <string name="tview_travelling_from">Travelling From</string>
+    <string name="tview_trip_duration">Trip Duration</string>
+    <string name="tview_traveller_count">Number of Travellers</string>
+    <string name="tview_hotel_type">Hotel Type</string>
+    <string name="tview_transport_media">Transportation Medium</string>
+    <string name="calc_expense">Calculate</string>
+    <string name="calc_expense_display">LKR 0.00</string>
+    <string name="package_description_placeholder">Description</string>
+    <string name="package_form_hint">Add a package</string>
+    <string name="update_package_hint">Edit package</string>
+    <string name="btn_package_update">Save Changes</string>
+    <string name="inquiry_send_btn_value">Inquiry</string>
+    <string name="see_details">See Details</string>
+    <string name="about_package">About the package</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Spinner text arrays are going below this -->
+    <string-array name="travel_from_spinner_array">
+        <item>none</item>
+        <item>Europe Country</item>
+        <item>North American Country</item>
+        <item>South American Country</item>
+        <item>Asian Country</item>
+        <item>Middle East Country</item>
+    </string-array>
+
+    <string-array name="trip_duration_spinner_array">
+        <item>Weekend (1 to 3 days)</item>
+        <item>Short Trip (up to 1 week)</item>
+        <item>Long Trip (over 1 week)</item>
+    </string-array>
+
+    <string-array name="traveller_count_spinner_array">
+        <item>1 Person</item>
+        <item>2 Person</item>
+        <item>3 Person</item>
+        <item>4 Person</item>
+        <item>Group</item>
+    </string-array>
+
+    <string-array name="hotel_type_spinner_array">
+        <item>3 Star</item>
+        <item>4 Star</item>
+        <item>5 Star</item>
+    </string-array>
+
+    <string-array name="travel_media_spinner_array">
+        <item>Rental Car/Cab</item>
+        <item>Rental Motorcycle</item>
+        <item>Uber</item>
+        <item>Bus</item>
+        <item>Train</item>
+    </string-array>
+
+    <!--    Description of the packages goes down here-->
+
+    <string name="package1_description">
+        <item>
+            Discover the breathtaking beauty of Sri Lanka with our exclusive hotel package.This package includes 1 night stay at one of our hotels,complete with all amenities you need for a complete and relaxing stay, You will also have the opportunity to explore the local area with a complimentary tour of the city.Our friendly and knowledgeable staff will be on hand to ensure that you have a memorable and enjoyable experience. Book your Sri Lankan adventure with us today!
+        </item>
+    </string>
+
+    <string name="package2_description">
+        <item>
+            Discover the breathtaking beauty of Sri Lanka with our exclusive hotel package.This package includes 1 night stay at one of our hotels,complete with all amenities you need for a complete and relaxing stay, You will also have the opportunity to explore the local area with a complimentary tour of the city.Our friendly and knowledgeable staff will be on hand to ensure that you have a memorable and enjoyable experience. Book your Sri Lankan adventure with us today!
+        </item>
+    </string>
+    <string name="packages">Packages</string>
+    <string name="welcome_btn_val">Explore</string>
+    <string name="pack_config_add_btn">Add New Package</string>
+    <string name="package_contact_no">Contact Number</string>
+    <string name="my_packages">My Packages</string>
+
+
+    <!-- Strings Related to Feedback Functionality -->
+    <string name="FeedbackActionBar">Feedback</string>
+    <string name="Feedback_tempName">Profile Name Goes Here</string>
+    <string name="Feedback_tempEmail">Email Goes Here</string>
+    <string name="Feedback_tempRating">Rating</string>
+    <string name="Feedback_tempFeedback">Feedback</string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="FeedbackFormPrompt">Share Your Experience</string>
+    <string name="feedbackEmail">Enter Your Email</string>
+    <string name="feedbackRating">Rate Our Service (1–10)</string>
+    <string name="feedbackContent">Enter Your Feedback</string>
+    <string name="clearFeedbackbtn">Clear</string>
+    <string name="addFeedbackBtn">Submit</string>
+    <!--Additional Strings-->
+    <string name="add_feedback_prompt">Share Your Experience</string>
+    <string name="feedback_prompt2">Give Feedback</string>
+    <string name="dummyFeedbackBtn">Feedback</string>
+    <!--    <string name="sample_content_description">picture</string>-->
+
+
+    <string name="view_profile_name">Name</string>
+    <string name="view_profile_email">Email</string>
+    <string name="view_profile_phone">Phone</string>
+    <string name="view_profile_country">Country</string>
+
+    <string name="profile_name_hint">Name</string>
+    <string name="profile_phone_hint">Phone</string>
+    <string name="profile_country_hint">Country</string>
+    <string name="profile_update_btn">UPDATE</string>
+
+    <string name="login">Login</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <string name="register">Register</string>
+    <string name="register_name_hint">Name</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_confirm_password_hint">Confirm Password</string>
+    <string name="register_type_hotel_owner">Hotel Owner</string>
+    <string name="register_type_traveler">Traveler</string>
+    <string name="registerBtn">REGISTER</string>
+
+</resources>

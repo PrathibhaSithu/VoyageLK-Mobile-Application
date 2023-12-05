@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PackageDescription"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/primary_color">
+
+        <ImageView
+            android:id="@+id/backBtn_to_packages"
+            android:contentDescription="@string/sample_content_description"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/background"
+            android:src="@drawable/drawable_back"/>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/background"
+            android:background="@color/primary_color"
+            android:paddingStart="220dp"
+            android:paddingTop="10dp"
+            android:text="@string/brand_name"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/pack_desc_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/sigiriya"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/pack_desc_lodgeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:text="@string/sample_lodge_name"
+        android:textColor="@color/primary_color"
+        android:textSize="24sp" />
+
+<!--set one-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/locationdrawable"
+            android:layout_marginStart="20dp"
+            app:tint="@color/ash"
+            />
+
+        <TextView
+            android:id="@+id/pack_desc_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sample_lodge_location"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+/>
+    </LinearLayout>
+
+<!--    set two-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/drawable_dollar"
+            android:layout_marginStart="20dp"
+            app:tint="@color/ash"
+            />
+
+        <TextView
+            android:id="@+id/pack_desc_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sample_lodge_price"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+<!--set three-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"/>
+
+<!--    set four-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/drawablecall"
+            android:layout_marginStart="20dp"
+            app:tint="@color/ash"
+            />
+
+        <TextView
+            android:id="@+id/pack_lodge_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="lodge_phone"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!--    set four-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/writtenby"
+            android:layout_marginStart="20dp"
+            app:tint="@color/ash"
+            />
+
+        <TextView
+            android:id="@+id/pack_lodge_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="lodge_phone"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/about_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_package"
+        android:textSize="22sp"
+        android:paddingStart="20dp"
+        android:textColor="@color/primary_color"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/pack_desc_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:justificationMode="inter_word"
+        android:paddingStart="0dp"
+        android:layout_marginEnd="20dp"
+        android:text="lodge_description"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+<!--    <Button-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/send_inquiry_button"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/primary_color"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/secondary"-->
+<!--        android:text="@string/inquiry_send_btn_value"-->
+<!--        />-->
+
+</LinearLayout>
+</ScrollView>

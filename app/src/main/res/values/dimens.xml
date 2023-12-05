@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing">3dp</dimen>
+
+    <dimen name="explore_list_item_padding">8dp</dimen>
+    <dimen name="explore_list_item_image_height">200dp</dimen>
+    <dimen name="explore_list_item_title_size">15sp</dimen>
+    <dimen name="explore_list_item_location_size">14sp</dimen>
+
+    <dimen name="explore_list_action_bar_txt_size">26sp</dimen>
+
+    <dimen name="explore_view_post_title_size">30sp</dimen>
+    <dimen name="explore_view_post_location_size">22sp</dimen>
+    <dimen name="explore_view_post_txt_size">13.5sp</dimen>
+
+    <dimen name="my_posts_list_action_bar_txt_size">26sp</dimen>
+
+    <dimen name="my_posts_list_item_padding">8dp</dimen>
+    <dimen name="my_posts_list_item_image_height">80dp</dimen>
+    <dimen name="my_posts_list_item_image_width">80dp</dimen>
+    <dimen name="my_posts_list_item_title_size">15sp</dimen>
+    <dimen name="my_posts_list_item_location_size">14sp</dimen>
+
+    <dimen name="acc_setting_label_margin_top">5dp</dimen>
+    <dimen name="acc_setting_label_margin_right">15dp</dimen>
+    <dimen name="acc_setting_label_margin_bottom">10dp</dimen>
+    <dimen name="acc_setting_label_margin_left">15dp</dimen>
+    <dimen name="acc_setting_label_padding">10dp</dimen>
+    <dimen name="acc_setting_img_height">30dp</dimen>
+    <dimen name="acc_setting_img_width">30dp</dimen>
+    <dimen name="acc_setting_img_margin_start">10dp</dimen>
+    <dimen name="acc_setting_txt_margin_start">20dp</dimen>
+    <dimen name="acc_setting_txt_size">18sp</dimen>
+
+
+<!--    IT21189630 DEMENSIONS-->
+    <!--    brand name dimensions-->
+    <dimen name="brand_name_height">40dp</dimen>
+    <dimen name="brand_name_width">140dp</dimen>
+    <!--    package form components dimensions-->
+    <dimen name="package_form_tView_height">30dp</dimen>
+    <dimen name="package_form_tView_width">240dp</dimen>
+    <dimen name="package_form_btn_height">50dp</dimen>
+    <dimen name="package_form_btn_width">190dp</dimen>
+    <dimen name="package_form_textBox_height">50dp</dimen>
+    <dimen name="package_form_textBox_width">336dp</dimen>
+    <dimen name="package_form_imgView_height">43dp</dimen>
+    <dimen name="package_form_imgView_width">47dp</dimen>
+    <!--    package item icons -->
+    <dimen name="package_layout_icon_height">25dp</dimen>
+    <dimen name="package_layout_icon_width">25dp</dimen>
+    <dimen name="spinner_height">48dp</dimen>
+
+
+    <!--    feedback form components dimensions-->
+    <dimen name="feedback_form_height">28dp</dimen>
+    <dimen name="feedback_form_width">240dp</dimen>
+    <dimen name="feedback_form_btn_height">50dp</dimen>
+    <dimen name="feedback_form_btn_width">170dp</dimen>
+    <dimen name="feedback_form_textBox_height">50dp</dimen>
+    <dimen name="feedback_form_textBox_width">340dp</dimen>
+    <dimen name="feedback_form_imgView_height">45dp</dimen>
+    <dimen name="feedback_form_imgView_width">50dp</dimen>
+    <!--    feedback card icons -->
+    <dimen name="feedback_user_icon_height">92dp</dimen>
+    <dimen name="feedback_user_icon_width">92dp</dimen>
+
+</resources>

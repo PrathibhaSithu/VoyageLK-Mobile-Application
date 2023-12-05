@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_package_form">
+
+    <EditText
+        android:id="@+id/add_package_form_lodgeName"
+        android:layout_width="@dimen/package_form_textBox_width"
+        android:layout_height="@dimen/package_form_textBox_height"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/package_label_resortName"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@id/package_details"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:theme="@style/text_input_modifier"
+        android:background="@drawable/text_input_back"
+        android:paddingStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/add_package_form_lodgeLocation"
+        android:layout_width="@dimen/package_form_textBox_width"
+        android:layout_height="@dimen/package_form_textBox_height"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/package_label_location"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@+id/add_package_form_lodgeName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:theme="@style/text_input_modifier"
+        android:background="@drawable/text_input_back"
+        android:paddingStart="20dp"/>
+
+    <EditText
+        android:id="@+id/add_package_form_lodgePrice"
+        android:layout_width="@dimen/package_form_textBox_width"
+        android:layout_height="@dimen/package_form_textBox_height"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/package_label_price"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@+id/add_package_form_lodgeLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:theme="@style/text_input_modifier"
+        android:background="@drawable/text_input_back"
+        android:paddingStart="20dp"/>
+
+
+    <EditText
+        android:id="@+id/add_package_form_contact_number"
+        android:layout_width="@dimen/package_form_textBox_width"
+        android:layout_height="@dimen/package_form_textBox_height"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input_back"
+        android:ems="10"
+        android:hint="@string/package_contact_no"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textSize="23sp"
+        android:theme="@style/text_input_modifier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_package_form_lodgePrice" />
+
+    <MultiAutoCompleteTextView
+
+        android:id="@+id/add_package_form_description"
+        android:layout_width="@dimen/package_form_textBox_width"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input_back"
+        android:ems="10"
+        android:gravity="clip_horizontal"
+        android:hint="@string/package_description_placeholder"
+        android:inputType="text|textMultiLine"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:textSize="23sp"
+        android:theme="@style/text_input_modifier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_package_form_contact_number" />
+
+    <TextView
+        android:id="@+id/package_details"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/primary_color"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/package_form_hint"
+        android:textColor="@color/background"
+        android:paddingStart="55dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="17dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:contentDescription="@string/sample_content_description"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        app:tint="@color/background"
+        android:src="@drawable/pack_svg"/>
+
+    <ImageView
+        android:id="@+id/addPkgbackBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/drawable_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/background" />
+
+    <Button
+        android:id="@+id/addPackageBtn"
+        android:layout_width="@dimen/package_form_btn_width"
+        android:layout_height="@dimen/package_form_btn_height"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/btn_package_add"
+        android:textColor="@color/primary_color"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/package_pic_upload" />
+
+    <ImageView
+        android:id="@+id/package_pic_upload"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/baseline_image_24"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/add_package_form_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="441dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

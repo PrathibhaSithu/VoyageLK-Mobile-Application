@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripExpenseCalculator">
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:paddingTop="17dp"
+        android:paddingStart="55dp"
+        android:text="@string/tview_expense_calc"
+        android:background="@color/primary_color"
+        android:textColor="@color/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_medium"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/sample_content_description"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/drawable_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/background" />
+
+
+    <TextView
+        android:id="@+id/travelling_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/tview_travelling_from"
+        android:textColor="@color/primary_color"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/travel_from"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/mainHeading"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/trip_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/tview_trip_duration"
+        android:textColor="@color/primary_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/travel_duration"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_travel_from" />
+
+    <ImageView
+        android:id="@+id/travel_traveller_count_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="9dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/drawablepeoplecount"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_traveller_count"
+        app:layout_constraintEnd_toStartOf="@id/travelling_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/trip_traveller_count"
+        app:layout_constraintVertical_bias="0.0"
+        app:tint="@color/primary_color" />
+
+    <TextView
+        android:id="@+id/trip_hotel_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/tview_hotel_type"
+        android:textColor="@color/primary_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/travel_hotel_type_img"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_num_of_travellers" />
+
+    <TextView
+        android:id="@+id/trip_transport_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/tview_transport_media"
+        android:textColor="@color/primary_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/travel_transport_med_img"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_hotel_type" />
+
+    <ImageView
+        android:id="@+id/travel_transport_med_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="9dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/transport"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_transport_media"
+        app:layout_constraintEnd_toStartOf="@id/travelling_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/trip_transport_media"
+        app:layout_constraintVertical_bias="0.0"
+        app:tint="@color/primary_color" />
+
+    <ImageView
+        android:id="@+id/travel_hotel_type_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="9dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/drawableratingbw"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_hotel_type"
+        app:layout_constraintEnd_toStartOf="@id/travelling_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/trip_hotel_type"
+        app:layout_constraintVertical_bias="0.0"
+        app:tint="@color/primary_color" />
+
+    <ImageView
+        android:id="@+id/travel_duration"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="9dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/drawableduration"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_duration"
+        app:layout_constraintEnd_toStartOf="@id/travelling_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/trip_duration"
+        app:layout_constraintVertical_bias="0.0"
+        app:tint="@color/primary_color" />
+
+    <TextView
+        android:id="@+id/trip_traveller_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/tview_traveller_count"
+        android:textColor="@color/primary_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/travel_traveller_count_img"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_trip_duration" />
+
+    <ImageView
+        android:id="@+id/travel_from"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/pin_point"
+        app:layout_constraintBottom_toBottomOf="@+id/travelling_from"
+        app:layout_constraintEnd_toStartOf="@id/travelling_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/travelling_from"
+        app:tint="@color/primary_color" />
+
+
+    <Spinner
+        android:id="@+id/spinner_travel_from"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/travel_from_spinner_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/travelling_from"
+        app:layout_constraintTop_toBottomOf="@+id/travelling_from" />
+
+    <Spinner
+        android:id="@+id/spinner_trip_duration"
+        android:layout_width="325dp"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/trip_duration_spinner_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_duration" />
+
+    <Spinner
+        android:id="@+id/spinner_num_of_travellers"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/traveller_count_spinner_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/trip_traveller_count"
+        app:layout_constraintTop_toBottomOf="@+id/trip_traveller_count" />
+
+    <Spinner
+        android:id="@+id/spinner_hotel_type"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/hotel_type_spinner_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/trip_hotel_type"
+        app:layout_constraintTop_toBottomOf="@+id/trip_hotel_type" />
+
+    <Spinner
+        android:id="@+id/spinner_transport_medium"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/travel_media_spinner_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/trip_transport_media"
+        app:layout_constraintTop_toBottomOf="@+id/trip_transport_media" />
+
+    <Button
+        android:id="@+id/calc_expense_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/calc_expense"
+        android:textColor="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expense_display"/>
+
+    <TextView
+        android:id="@+id/expense_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/calc_expense_display"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/calc_expense_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_transport_medium" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

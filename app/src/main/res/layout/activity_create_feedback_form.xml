@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_feedback_form">
+
+    <TextView
+        android:id="@+id/provide_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/primary_color"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="clip_horizontal"
+        android:paddingStart="55dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="25dp"
+        android:text="@string/provide_feedback"
+        android:textColor="@color/background"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/sample_content_description"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/drawable_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/background" />
+
+    <ImageView
+        android:contentDescription="feedback_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        app:tint="@color/white"
+        android:src="@drawable/feedback_icon"/>
+
+        <TextView
+            android:id="@+id/feedbackTopic"
+            android:layout_width="332dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="59dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/FeedbackFormPrompt"
+            android:textColor="@color/primary_color"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/provide_feedback" />
+
+        <EditText
+            android:id="@+id/feedbackEmail"
+            android:layout_width="370dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_input_back"
+            android:ems="10"
+            android:hint="@string/feedbackEmail"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/feedbackBody"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/feedbackBody"
+            app:layout_constraintTop_toBottomOf="@+id/feedbackTopic" />
+
+        <EditText
+            android:id="@+id/feedbackRating"
+            android:layout_width="370dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_input_back"
+            android:ems="10"
+            android:hint="@string/feedbackRating"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/feedbackBody"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/feedbackBody"
+            app:layout_constraintTop_toBottomOf="@+id/feedbackEmail" />
+
+        <EditText
+            android:id="@+id/feedbackBody"
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_input_back"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/feedbackContent"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feedbackRating" />
+
+        <ImageView
+            android:id="@+id/addFeedbackImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="147dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feedbackBody"
+            app:srcCompat="@drawable/image_upload" />
+
+        <Button
+            android:id="@+id/addFeedbackBtn"
+            android:layout_width="@dimen/feedback_form_btn_width"
+            android:layout_height="@dimen/feedback_form_btn_height"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="55dp"
+            android:backgroundTint="@color/secondary"
+            android:text="@string/addFeedbackBtn"
+            android:textColor="@color/primary_color"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addFeedbackImg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--</ScrollView>-->

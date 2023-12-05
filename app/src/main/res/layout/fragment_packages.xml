@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragments.PackagesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/up_ribbon_packages"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/primary_color"
+        android:paddingTop="17dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:textSize="24sp"
+        android:text="@string/packages"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/package_cards_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:layout_marginTop="70dp" />
+
+
+</FrameLayout>

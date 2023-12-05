@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#757575</color>
+
+    <color name="primary">#192A56</color>
+    <color name="secondary">#F0932B</color>
+    <color name="background">#FFFFFF</color>
+    <color name="primaryVariant">#154360</color>
+    <color name="secondaryVariant">#FFC300</color>
+
+    <color name="acc_setting_label">@color/background</color>
+    <color name="acc_setting_label_txt">@color/primary</color>
+    <color name="acc_setting_label_icon">@color/primary</color>
+
+    <color name="explore_list_item_bg">#F5F0F0</color>
+    <color name="postInput">#F6F6F6</color>
+
+    <color name="primary_color">#192A56</color>
+    <color name="ash">#777777</color>
+
+</resources>

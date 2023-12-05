@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintHorizontal_bias="0.5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/explore_list_item_padding"
+        android:background="@drawable/explore_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/explore_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/explore_list_item_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sigiriya"
+            app:shapeAppearanceOverlay="@style/roundImageView" />
+
+        <TextView
+            android:id="@+id/explore_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="The Eighth Wonder of the World"
+            android:letterSpacing="0.01"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/explore_list_item_title_size"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="-10dp"
+                android:layout_marginEnd="-12dp"
+                android:src="@drawable/location"
+                app:tint="@color/secondary" />
+
+            <TextView
+                android:id="@+id/explore_item_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sigiriya"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/explore_list_item_location_size"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

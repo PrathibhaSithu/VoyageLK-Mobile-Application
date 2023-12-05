@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MadMiniProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_package_modification_card"
+            android:exported="false" />
+        <activity
+            android:name=".activity_package_configurations"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreMyPostListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreUpdatePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreAddPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreViewPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatePackageDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PackageDescription"
+            android:exported="false" />
+        <activity
+            android:name=".TripExpenseCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".create_package_form"
+            android:exported="false" />
+        <activity
+            android:name=".feedback_card"
+            android:exported="false" />
+        <activity
+            android:name=".create_feedback_form"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackRecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>
